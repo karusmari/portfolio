@@ -1,0 +1,57 @@
+{
+  "updatedAt": "2026-05-30T16:22:59.786Z",
+  "username": "amirho3inh",
+  "profile": {
+    "login": "amirho3inh",
+    "bio": "Experienced PHP and frontend web developer with over 15 years of experience in designing and developing dynamic and responsive websites.",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/25774978?v=4",
+    "url": "https://github.com/amirho3inh",
+    "followers": 14,
+    "following": 16,
+    "publicRepos": 32
+  },
+  "pinnedRepos": [
+    {
+      "name": "GolabiJs",
+      "description": "add feature to jquery",
+      "language": "JavaScript",
+      "stars": 3,
+      "url": "https://github.com/amirho3inh/GolabiJs"
+    },
+    {
+      "name": "crypto-ai-analysis",
+      "description": "Cryptocurrency analysis based on news and user analysis",
+      "language": "Python",
+      "stars": 1,
+      "url": "https://github.com/amirho3inh/crypto-ai-analysis"
+    },
+    {
+      "name": "microsoft-graph-sharepoint-backup-scripts",
+      "description": "Bash-based Microsoft Graph tools to authenticate with app-only credentials and back up SharePoint files to local storage, with filtering, logging, and progress tracking.",
+      "language": "PowerShell",
+      "stars": 0,
+      "url": "https://github.com/amirho3inh/microsoft-graph-sharepoint-backup-scripts"
+    },
+    {
+      "name": "amirho3inh",
+      "description": "Config files for my GitHub profile.",
+      "language": "Mixed",
+      "stars": 0,
+      "url": "https://github.com/amirho3inh/amirho3inh"
+    },
+    {
+      "name": "wireguard-gaming-manager",
+      "description": "WireGuard Gaming Manager is a professional, menu-driven Bash script to install and manage a WireGuard server for gaming, with Full/Split tunnel profiles, QR exports, and client lifecycle management on Linux.",
+      "language": "Shell",
+      "stars": 0,
+      "url": "https://github.com/amirho3inh/wireguard-gaming-manager"
+    },
+    {
+      "name": "LemonToast",
+      "description": "Fully-featured toast notification system using pure JavaScript and TailwindCSS, with support for themes, animations, RTL, and action buttons.",
+      "language": "JavaScript",
+      "stars": 0,
+      "url": "https://github.com/amirho3inh/LemonToast"
+    }
+  ]
+}
