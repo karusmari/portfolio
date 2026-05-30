@@ -4,11 +4,13 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { personal } from "@/data/resumeContent";
 import { gsap } from "@/lib/gsap";
+import { withBasePath } from "@/lib/assetPath";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 
 export default function HeroSection() {
   const sectionRef = useRef(null);
   const reducedMotion = usePrefersReducedMotion();
+  const maskUrl = withBasePath("/mask.svg");
 
   useEffect(() => {
     if (!sectionRef.current || reducedMotion) return undefined;
@@ -137,8 +139,8 @@ export default function HeroSection() {
             <div
               className="hero-portrait-shell relative mx-auto aspect-[3/4] w-full overflow-hidden"
               style={{
-                WebkitMaskImage: "url(/mask.svg)",
-                maskImage: "url(/mask.svg)",
+                WebkitMaskImage: `url(${maskUrl})`,
+                maskImage: `url(${maskUrl})`,
                 WebkitMaskRepeat: "no-repeat",
                 maskRepeat: "no-repeat",
                 WebkitMaskSize: "100% 100%",
@@ -150,7 +152,7 @@ export default function HeroSection() {
               }}
             >
               <Image
-                src="/profile-photo.jpg"
+                src={withBasePath("/profile-photo.jpg")}
                 alt={`${personal.name} portrait`}
                 fill
                 sizes="(max-width: 1279px) 360px, 400px"

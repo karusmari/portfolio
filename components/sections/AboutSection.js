@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { personal } from "@/data/resumeContent";
 import { gsap } from "@/lib/gsap";
+import { withBasePath } from "@/lib/assetPath";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 
 function renderHeadingWords(text) {
@@ -105,7 +106,7 @@ export default function AboutSection() {
               className="about-portrait-frame relative aspect-[2/3] w-full overflow-hidden rounded-[20px] shadow-[0_28px_70px_rgba(2,3,11,0.55)]"
             >
               <Image
-                src="/profile-photo.jpg"
+                src={withBasePath("/profile-photo.jpg")}
                 alt={`${personal.name} portrait`}
                 fill
                 sizes="(max-width: 1023px) 80vw, 420px"
