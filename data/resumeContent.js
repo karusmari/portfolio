@@ -29,7 +29,7 @@ export const siteMeta = {
   footerTagline: "Fullstack & Mobile Developer · Mariehamn, Åland",
   description:
     "Fullstack and mobile developer working with JavaScript, Go, Java, and Flutter. Currently completing the 01Edu / Gritlab ICT program in Åland.",
-  siteUrl: "https://maris-karu.github.io/portfolio",
+  siteUrl: "https://karusmari.github.io/portfolio",
   locale: "en_US",
   ogImage: "/og-profile.jpg",
   keywords: [
