@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://karusmari.github.io/portfolio
+Sitemap: https://karusmari.github.io/portfolio/sitemap.xml
