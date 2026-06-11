@@ -32,7 +32,6 @@ export default function HomePage() {
         <div className="relative z-10">
           {show("hero") && <HeroSection />}
           {show("about") && <AboutSection />}
-          {show("journey") && <TimelineSection />}
           {show("skills") && <SkillsSection />}
           {show("education") && <EducationSection />}
           {show("oss") && <OpenSourceSection />}

@@ -3,15 +3,18 @@ const themeConfig = require("./data/themeConfig.json");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,jsx}",
-    "./components/**/*.{js,jsx}",
-    "./data/**/*.{js,jsx}",
-    "./hooks/**/*.{js,jsx}",
-    "./lib/**/*.{js,jsx}"
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./data/**/*.{js,ts,jsx,tsx}",
+    "./hooks/**/*.{js,ts,jsx,tsx}",
+    "./lib/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
       colors: {
+        // ensure any `-violet` utility maps to your theme accent
+        violet: themeConfig.accent.violet,
         abyss: themeConfig.base.bg0,
         ink: themeConfig.base.bg1,
         silver: themeConfig.base.textMain,
@@ -23,12 +26,11 @@ module.exports = {
         }
       },
       boxShadow: {
-        glow: "0 0 35px rgba(159, 92, 255, 0.45)",
+        glow: `0 0 35px ${themeConfig.accent.violet}73`,
         card: "0 20px 60px rgba(6, 7, 20, 0.55)"
       },
       backgroundImage: {
-        "mesh-gradient":
-          "radial-gradient(circle at 15% 20%, rgba(159, 92, 255, 0.25), transparent 38%), radial-gradient(circle at 85% 10%, rgba(55, 244, 255, 0.18), transparent 42%), radial-gradient(circle at 55% 75%, rgba(255, 77, 184, 0.18), transparent 40%)"
+        "mesh-gradient": `radial-gradient(circle at 15% 20%, ${themeConfig.accent.violet}40, transparent 38%), radial-gradient(circle at 85% 10%, ${themeConfig.accent.cyan}2e, transparent 42%), radial-gradient(circle at 55% 75%, ${themeConfig.accent.magenta}2e, transparent 40%)`
       },
       animation: {
         pulseCue: "pulseCue 2.4s ease-in-out infinite",

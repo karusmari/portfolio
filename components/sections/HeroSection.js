@@ -118,7 +118,7 @@ export default function HeroSection() {
       ref={sectionRef}
       className="hero-backdrop relative flex min-h-[100svh] items-center overflow-hidden pb-16 pt-32 md:pb-20 md:pt-36"
     >
-      <div className="hero-layer-slow section-ambient absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(159,92,255,0.22),transparent_42%),radial-gradient(circle_at_80%_35%,rgba(55,244,255,0.12),transparent_44%)]" />
+      <div className="hero-layer-slow section-ambient absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(6,7,20,0.45),transparent_38%),radial-gradient(circle_at_20%_10%,rgb(var(--violet-rgb)/0.12),transparent_42%),radial-gradient(circle_at_80%_35%,rgb(var(--cyan-rgb)/0.06),transparent_44%)]" />
 
       <div className="hero-layer-fast absolute right-[8%] top-[14%] h-52 w-52 rounded-full bg-neon-magenta/22 blur-[110px]" />
       <div className="hero-layer-fast absolute left-[8%] top-[42%] h-52 w-52 rounded-full bg-neon-cyan/18 blur-[120px]" />

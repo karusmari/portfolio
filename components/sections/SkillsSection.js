@@ -64,7 +64,7 @@ export default function SkillsSection() {
   return (
     <section id="skills" data-section ref={sectionRef} className="relative py-28 md:py-36">
       <div className="section-shell">
-        <p className="label-chip">Scene 04 / Skills Universe</p>
+        <p className="label-chip">Scene 04 / Skills</p>
         <div className="skills-title mt-6 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <h2 className="display-font text-balance text-[clamp(2.1rem,5vw,4.6rem)] font-bold leading-[0.94]">
             A living command center of technical and creative systems.
@@ -98,11 +98,6 @@ export default function SkillsSection() {
             ))}
           </div>
 
-          <div className="pointer-events-none absolute -bottom-10 left-0 hidden w-full justify-between px-8 lg:flex">
-            <span className="skill-badge label-chip">Systems Thinking</span>
-            <span className="skill-badge label-chip">Motion Craft</span>
-            <span className="skill-badge label-chip">Narrative UX</span>
-          </div>
         </div>
       </div>
     </section>

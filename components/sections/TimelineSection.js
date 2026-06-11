@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { journey } from "@/data/resumeContent";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 

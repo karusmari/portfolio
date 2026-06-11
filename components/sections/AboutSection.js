@@ -117,7 +117,7 @@ export default function AboutSection() {
 
             <figcaption className="about-caption mt-4 flex items-center gap-3">
               <span className="h-px flex-1 bg-gradient-to-r from-transparent via-white/45 to-transparent" />
-              <p className="mono-font text-[10px] uppercase tracking-[0.2em] text-silver/70">Design-led Frontend</p>
+              <p className="mono-font text-[10px] uppercase tracking-[0.2em] text-silver/70">Fullstack & Mobile Developer</p>
               <span className="h-px flex-1 bg-gradient-to-r from-transparent via-white/45 to-transparent" />
             </figcaption>
           </div>

@@ -58,9 +58,9 @@ export default function SiteBackground() {
       <div className="absolute inset-0 grid-overlay opacity-60" />
       <div className="absolute inset-0 bg-mesh-gradient opacity-85" />
 
-      <div className="ambient-orb-a absolute -left-20 top-8 h-[340px] w-[340px] rounded-full bg-neon-violet/30 blur-[110px]" />
-      <div className="ambient-orb-b absolute right-[-70px] top-[25vh] h-[420px] w-[420px] rounded-full bg-neon-cyan/20 blur-[130px]" />
-      <div className="ambient-orb-c absolute bottom-[-100px] left-[22%] h-[380px] w-[380px] rounded-full bg-neon-magenta/25 blur-[120px]" />
+      <div className="ambient-orb-a absolute -left-20 top-8 h-[340px] w-[340px] rounded-full bg-neon-violet/12 blur-[110px]" />
+      <div className="ambient-orb-b absolute right-[-70px] top-[25vh] h-[420px] w-[420px] rounded-full bg-neon-cyan/08 blur-[130px]" />
+      <div className="ambient-orb-c absolute bottom-[-100px] left-[22%] h-[380px] w-[380px] rounded-full bg-neon-magenta/10 blur-[120px]" />
     </div>
   );
 }

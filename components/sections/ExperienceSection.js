@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { experiencePanels, highlights } from "@/data/resumeContent";
 import { gsap } from "@/lib/gsap";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
@@ -8,6 +8,7 @@ import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 export default function ExperienceSection() {
   const sectionRef = useRef(null);
   const reducedMotion = usePrefersReducedMotion();
+  const [openTooltip, setOpenTooltip] = useState(null);
 
   useEffect(() => {
     if (!sectionRef.current || reducedMotion) return undefined;
@@ -70,19 +71,45 @@ export default function ExperienceSection() {
       <div className="section-shell relative z-10">
         <p className="label-chip">Scene 06 / Experience Highlights</p>
         <h2 className="experience-title display-font mt-6 max-w-4xl text-balance text-[clamp(2rem,4.8vw,4.4rem)] font-bold leading-[0.95]">
-          Quantifiable outcomes, backed by refined delivery discipline.
+          Some context, in numbers.
         </h2>
 
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {highlights.map((item) => (
-            <article key={item.label} className="highlight-metric rounded-3xl border border-white/15 bg-white/[0.05] p-5">
+            <article
+              key={item.label}
+              className="highlight-metric relative rounded-3xl border border-white/15 bg-white/[0.05] p-5"
+              style={item.tooltip ? { cursor: "pointer" } : {}}
+              onClick={() => {
+                if (!item.tooltip) return;
+                setOpenTooltip(openTooltip === item.label ? null : item.label);
+              }}
+            >
               <p className="display-font text-4xl font-bold text-white">
                 <span className="metric-value" data-target={item.value}>
                   {item.value}
                 </span>
                 <span>{item.suffix}</span>
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-silver/75">{item.label}</p>
+              <p className="mt-3 text-sm leading-relaxed text-silver/75">
+                {item.label}
+                {item.tooltip && (
+                  <span className="ml-2 inline-block rounded-full border border-white/20 px-2 py-0.5 text-xs text-white/50">
+                    {openTooltip === item.label ? "▲ close" : "▼ show"}
+                  </span>
+                )}
+              </p>
+
+              {item.tooltip && openTooltip === item.label && (
+                <ul className="mt-4 space-y-2 border-t border-white/10 pt-4">
+                  {item.tooltip.map((entry) => (
+                    <li key={entry.lang} className="flex items-center justify-between text-sm">
+                      <span className="text-white/90">{entry.lang}</span>
+                      <span className="text-silver/60">{entry.level}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </article>
           ))}
         </div>

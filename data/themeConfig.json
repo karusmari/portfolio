@@ -1,34 +1,30 @@
 {
   "base": {
-    "bg0": "#06050d",
-    "bg1": "#100f1f",
-    "surfaceA": "#111223",
-    "surfaceB": "#080913",
-    "textMain": "#e9ecf8",
-    "textSoft": "#bfc4da"
-  },
-  "accent": {
-    "violet": "#9f5cff",
-    "cyan": "#37f4ff",
-    "magenta": "#ff4db8",
-    "amber": "#ffb979"
+    "bg0": "#111210",
+    "bg1": "#171714",
+    "surfaceA": "#1a1a17",
+    "surfaceB": "#0e0e0c",
+    "textMain": "#e8e6de",
+    "textSoft": "#888880"
   },
   "background": {
-    "start": "#05040b",
-    "mid": "#090917",
-    "end": "#06060f"
+    "start": "#0f0f0d",
+    "mid": "#111210",
+    "end": "#0e0e0c"
   },
-  "font": {
-    "//display": "syne | outfit | spaceGrotesk",
-    "display": "syne",
-    "//body": "manrope | inter | sora",
-    "body": "manrope",
-    "//mono": "spaceMono | jetbrainsMono",
-    "mono": "spaceMono"
+  "accent": {
+    "violet": "#7a9e6e",
+    "cyan": "#9ab88a",
+    "magenta": "#5a7a50",
+    "amber": "#b8c9a8"
   },
   "loader": {
-    "background": "#06050d",
-    "text": "#e9ecf8",
-    "textValue": "A."
+    "background": "#111210",
+    "text": "#e8e6de"
+  },
+  "font": {
+    "display": "syne",
+    "body": "inter",
+    "mono": "jetbrainsMono"
   }
 }
